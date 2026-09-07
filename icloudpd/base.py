@@ -264,6 +264,7 @@ def main(
             subprocess.call([notification_script])
         if smtp_username is not None or notification_email is not None:
             send_2sa_notification(
+                username,
                 smtp_username,
                 smtp_password,
                 smtp_host,
